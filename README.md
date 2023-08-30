@@ -1,34 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Mark Vu Portfolio
+
+Mark Vu Portfolio is my portfolio.
+
+## Technology
+
+- [Nextjs](https://nextjs.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [TailwindCSS](https://tailwindcss.com/)
+
+## System Requirement
+
+- [NodeJS](https://nodejs.org/en) (>= v18.17.0)
+- [pnpm](https://pnpm.io/) (>= v8.6.12).
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+pnpm install && pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Go to Github Project to create task and reference to an issue.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Issue name template: `[<issue_type>] <name_of_issue>`:
 
-## Learn More
+  - `<issue_type>`: Feature, Docs, Bugfix, Config,...
+  - Example: `[Feature] Do somethings`
 
-To learn more about Next.js, take a look at the following resources:
+- Branch name template: `<pr_type>/<issue_id>-<name_of_issue>`:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - `<pr_type>`: feature, docs, bugfix, config,...
+  - Example: `feature/123-do-somethings`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Commit template: `<name_of_issue>`:
 
-## Deploy on Vercel
+  - Example: `Do somethings`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Pull request template:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - Title: `[<issue_type>] <name_of_issue>`. Example: `[Feature] Do somethings`.
+  - Description: Describe detail pr (if pr is so simple, do not need it), reference to issue_id.
+  - Example for description:
+    - `- Do somethings`
+    - `- Fixes: #123`
+  - Add more infomation in right side.
+
+- Merging:
+
+  - Only allow `Squash and Merge` option.
+  - Add `<issue_type>` before default title. Example: `[Feature] Do somethings (#123)`.
