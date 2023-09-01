@@ -1,9 +1,9 @@
 import "../globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Header } from "../_components";
+import { Fira_Code } from "next/font/google";
+import { Footer, Header } from "../_components";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Fira_Code({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mark Vu",
@@ -19,10 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-background text-white`}>
+        <Header />
         <div className="w-full max-w-[1024px] mx-auto">
-          <Header />
+          <div className="h-[60px]" />
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );
