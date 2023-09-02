@@ -4,7 +4,7 @@ import { RotateButton } from "..";
 
 export function Footer() {
   return (
-    <footer className="fixed w-full border-t border-t-gray">
+    <footer className="w-full border-t border-t-gray">
       <div className="flex flex-col items-center gap-12 max-w-[1024px] mx-auto py-8">
         <div className="flex justify-between w-full">
           <div className="flex flex-col gap-4">
