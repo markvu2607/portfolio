@@ -4,7 +4,6 @@ import { routes } from "@/app/_constants";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
 import { RotateButton } from "..";
 
 export function Header() {
