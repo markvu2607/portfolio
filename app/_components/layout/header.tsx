@@ -4,12 +4,14 @@ import { routes } from "@/app/_constants";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
+import { RotateButton } from "..";
 
 export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed w-full h-[60px] bg-background">
+    <header className="fixed z-50 w-full h-[60px] bg-background">
       <div className="flex justify-between max-w-[1024px] mx-auto pt-8 pb-2">
         <Link href="/">
           <div className="flex items-center gap-2">
@@ -33,6 +35,26 @@ export function Header() {
             ))}
           </ul>
         </nav>
+      </div>
+      <div className="fixed left-4 top-0 flex flex-col gap-2 items-center">
+        <div className="border-l border-gray h-[45vh]" />
+        <div className="flex flex-col items-center gap-2">
+          <RotateButton>
+            <Link href={process.env.GITHUB || "/"} target="_blank">
+              <Image src="/github.svg" alt="Github" width={32} height={32} />
+            </Link>
+          </RotateButton>
+          <RotateButton>
+            <Link href={process.env.LINKEDIN || "/"} target="_blank">
+              <Image
+                src="/linkedin.svg"
+                alt="Linkedin"
+                width={32}
+                height={32}
+              />
+            </Link>
+          </RotateButton>
+        </div>
       </div>
     </header>
   );

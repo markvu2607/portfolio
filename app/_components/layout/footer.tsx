@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { RotateButton } from "..";
 
 export function Footer() {
   return (
@@ -23,17 +24,26 @@ export function Footer() {
           <div>
             <span className="font-medium text-[24px]">Media</span>
             <div className="flex gap-2">
-              <Link href={process.env.GITHUB as string} target="_blank">
-                <Image src="/github.svg" alt="Github" width={32} height={32} />
-              </Link>
-              <Link href={process.env.LINKEDIN as string} target="_blank">
-                <Image
-                  src="/linkedin.svg"
-                  alt="Linkedin"
-                  width={32}
-                  height={32}
-                />
-              </Link>
+              <RotateButton>
+                <Link href={process.env.GITHUB || "/"} target="_blank">
+                  <Image
+                    src="/github.svg"
+                    alt="Github"
+                    width={32}
+                    height={32}
+                  />
+                </Link>
+              </RotateButton>
+              <RotateButton>
+                <Link href={process.env.LINKEDIN || "/"} target="_blank">
+                  <Image
+                    src="/linkedin.svg"
+                    alt="Linkedin"
+                    width={32}
+                    height={32}
+                  />
+                </Link>
+              </RotateButton>
             </div>
           </div>
         </div>
