@@ -1,7 +1,7 @@
-import "../globals.css";
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
-import { Footer, Header } from "../_components";
+import { Footer, Header, SpinnerTitleBarEffect } from "../_components";
+import "../globals.css";
 
 const inter = Fira_Code({ subsets: ["latin"] });
 
@@ -26,6 +26,7 @@ export default function RootLayout({
         </div>
         <Footer />
       </body>
+      <SpinnerTitleBarEffect />
     </html>
   );
 }
