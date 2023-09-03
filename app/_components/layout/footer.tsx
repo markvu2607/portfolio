@@ -1,6 +1,6 @@
+import { RotateButton } from "@/_components";
 import Image from "next/image";
 import Link from "next/link";
-import { RotateButton } from "..";
 
 export function Footer() {
   return (
