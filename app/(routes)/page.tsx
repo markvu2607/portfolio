@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Banner, Quote } from "../_components";
+import { Banner, ProjectSection, Quote } from "../_components";
 
 export default function Home() {
   return (
@@ -9,6 +8,7 @@ export default function Home() {
         content="With great power comes great electricity bill"
         author="Dr. Who"
       />
+      <ProjectSection />
     </main>
   );
 }
