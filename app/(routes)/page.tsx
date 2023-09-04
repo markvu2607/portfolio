@@ -1,4 +1,4 @@
-import { Banner, ProjectSection, Quote } from "../_components";
+import { Banner, ProjectSection, Quote, SkillSection } from "../_components";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
         author="Dr. Who"
       />
       <ProjectSection />
+      <SkillSection />
     </main>
   );
 }

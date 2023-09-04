@@ -3,6 +3,7 @@ import { PropsWithChildren } from "react";
 
 type TSectionWrapperProps = PropsWithChildren & {
   title: string;
+  // TODO: Refactor viewMore prop
   viewMore: { visible: boolean; link?: string };
 };
 
