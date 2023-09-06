@@ -1,4 +1,10 @@
-import { Banner, ProjectSection, Quote, SkillSection } from "../_components";
+import {
+  AboutMeSection,
+  Banner,
+  ProjectSection,
+  Quote,
+  SkillSection,
+} from "../_components";
 
 export default function Home() {
   return (
@@ -10,6 +16,7 @@ export default function Home() {
       />
       <ProjectSection />
       <SkillSection />
+      <AboutMeSection />
     </main>
   );
 }

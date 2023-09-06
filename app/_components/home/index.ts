@@ -3,4 +3,5 @@ export * from "./project-section"
 export * from "./quote"
 export * from "./section-wrapper"
 export * from "./skill-section"
+export * from "./about-me-section"
 
