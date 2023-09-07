@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
-import { Footer, Header, SpinnerTitleBarEffect } from "../_components";
+import { Footer, Header, SpinnerTitleBarEffect } from "@/_components";
 import "../globals.css";
 
 const inter = Fira_Code({ subsets: ["latin"] });
