@@ -1,10 +1,11 @@
 import {
   AboutMeSection,
   Banner,
+  ContactSection,
   ProjectSection,
   Quote,
   SkillSection,
-} from "../_components";
+} from "@/_components";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <ProjectSection />
       <SkillSection />
       <AboutMeSection />
+      <ContactSection />
     </main>
   );
 }
