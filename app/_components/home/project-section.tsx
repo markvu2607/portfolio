@@ -8,8 +8,8 @@ export function ProjectSection() {
       viewMore={{ visible: true, link: "/projects" }}
     >
       <div className="grid grid-cols-3 gap-2">
-        {projects.map((project) => (
-          <Project key={project.name} project={project} />
+        {projects.map((project, index) => (
+          <Project key={index} project={project} />
         ))}
       </div>
     </SectionWrapper>
