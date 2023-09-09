@@ -1,7 +1,7 @@
 import { Breadcrumb, SectionWrapper, SkillSection } from "@/_components";
 import Image from "next/image";
 
-export default function Contact() {
+export default function AboutMe() {
   return (
     <main className="flex flex-col gap-24 py-24">
       <Breadcrumb link="about-me" description="Who am i?" />
