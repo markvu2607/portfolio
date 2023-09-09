@@ -1,17 +1,11 @@
-import { SectionWrapper } from "@/_components";
+import { Breadcrumb, SectionWrapper } from "@/_components";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Contact() {
   return (
     <main className="flex flex-col gap-24 py-24">
-      <div className="flex flex-col gap-2">
-        <span className="font-semibold text-[32px]">
-          <span className="text-primary">/</span>
-          <span>contact</span>
-        </span>
-        <span>Who am i?</span>
-      </div>
+      <Breadcrumb link="contact" description="Who am i?" />
 
       <div className="flex gap-4">
         <span className="flex-1 text-gray">
