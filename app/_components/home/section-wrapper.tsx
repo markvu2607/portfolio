@@ -5,11 +5,13 @@ type TSectionWrapperProps = PropsWithChildren & {
   title: string;
   // TODO: Refactor viewMore prop
   viewMore: { visible: boolean; link?: string };
+  showTitleLine?: boolean;
 };
 
 export function SectionWrapper({
   title,
   viewMore,
+  showTitleLine = true,
   children,
 }: TSectionWrapperProps) {
   return (
@@ -20,7 +22,9 @@ export function SectionWrapper({
             <span className="text-primary">#</span>
             {title}
           </span>
-          <div className="w-[200px] h-0 border-t border-primary" />
+          {showTitleLine && (
+            <div className="w-[200px] h-0 border-t border-primary" />
+          )}
         </div>
         {viewMore.visible && (
           <Link href={viewMore.link || "/"}>
