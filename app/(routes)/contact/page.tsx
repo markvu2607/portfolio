@@ -1,3 +1,4 @@
+import { SectionWrapper } from "@/_components";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -36,11 +37,11 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4">
-        <span className="font-medium text-[32px]">
-          <span className="text-primary">#</span>
-          <span>all-media</span>
-        </span>
+      <SectionWrapper
+        title="all-media"
+        showTitleLine={false}
+        viewMore={{ visible: false }}
+      >
         <div className="flex gap-4">
           <Link href={process.env.GITHUB || "/"} target="_blank">
             <div className="flex items-center gap-1">
@@ -55,7 +56,7 @@ export default function Contact() {
             </div>
           </Link>
         </div>
-      </div>
+      </SectionWrapper>
     </main>
   );
 }
