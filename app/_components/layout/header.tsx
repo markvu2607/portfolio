@@ -5,6 +5,7 @@ import { routes } from "@/_constants";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 export function Header() {
   const pathname = usePathname();
@@ -35,7 +36,11 @@ export function Header() {
           </ul>
         </nav>
       </div>
-      <div className="fixed left-4 top-0 flex flex-col gap-2 items-center">
+      <motion.div
+        initial={{ y: "-100%" }}
+        animate={{ y: 0 }}
+        className="fixed left-4 top-0 flex flex-col gap-2 items-center"
+      >
         <div className="border-l border-gray h-[45vh]" />
         <div className="flex flex-col items-center gap-2">
           <RotateButton>
@@ -66,7 +71,7 @@ export function Header() {
             </Link>
           </RotateButton>
         </div>
-      </div>
+      </motion.div>
     </header>
   );
 }
