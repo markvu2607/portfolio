@@ -25,7 +25,13 @@ export function Footer() {
             <span className="font-medium text-[24px]">Media</span>
             <div className="flex gap-2">
               <RotateButton>
-                <Link href={process.env.GITHUB || "/"} target="_blank">
+                <Link
+                  href={
+                    `${process.env.GITHUB_PROVIDER}${process.env.GITHUB_ACCOUNT}` ||
+                    "/"
+                  }
+                  target="_blank"
+                >
                   <Image
                     src="/github.svg"
                     alt="Github"
@@ -35,7 +41,13 @@ export function Footer() {
                 </Link>
               </RotateButton>
               <RotateButton>
-                <Link href={process.env.LINKEDIN || "/"} target="_blank">
+                <Link
+                  href={
+                    `${process.env.LINKEDIN_PROVIDER}${process.env.LINKEDIN_ACCOUNT}` ||
+                    "/"
+                  }
+                  target="_blank"
+                >
                   <Image
                     src="/linkedin.svg"
                     alt="Linkedin"

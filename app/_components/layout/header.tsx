@@ -39,12 +39,24 @@ export function Header() {
         <div className="border-l border-gray h-[45vh]" />
         <div className="flex flex-col items-center gap-2">
           <RotateButton>
-            <Link href={process.env.GITHUB || "/"} target="_blank">
+            <Link
+              href={
+                `${process.env.GITHUB_PROVIDER}${process.env.GITHUB_ACCOUNT}` ||
+                "/"
+              }
+              target="_blank"
+            >
               <Image src="/github.svg" alt="Github" width={32} height={32} />
             </Link>
           </RotateButton>
           <RotateButton>
-            <Link href={process.env.LINKEDIN || "/"} target="_blank">
+            <Link
+              href={
+                `${process.env.LINKEDIN_PROVIDER}${process.env.LINKEDIN_ACCOUNT}` ||
+                "/"
+              }
+              target="_blank"
+            >
               <Image
                 src="/linkedin.svg"
                 alt="Linkedin"
