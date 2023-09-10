@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { TypeAnimation } from "react-type-animation";
 
 export function Banner() {
   const router = useRouter();
@@ -11,8 +12,20 @@ export function Banner() {
       <div className="flex-1 pt-12">
         <div className="flex flex-col items-start gap-6">
           <span className="text-[32px] font-semibold">
-            Mark is a <span className="text-primary">front-end developer</span>{" "}
-            from Vietnam.
+            <TypeAnimation
+              sequence={[
+                "I'm a front-end developer from Vietnam.",
+                1000,
+                "I'm a fullstack developer.",
+                1000,
+                `I love Van <3`,
+                1000,
+              ]}
+              speed={50}
+              repeat={Infinity}
+            />
+            {/* Mark is a <span className="text-primary">front-end developer</span>{" "}
+            from Vietnam. */}
           </span>
           <span className="text-gray">
             He crafts responsive websites where technologies meet creativity.
