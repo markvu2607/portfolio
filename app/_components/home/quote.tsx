@@ -31,7 +31,7 @@ export function Quote({ content, author }: TQuoteProps) {
           </div>
         </div>
         <div className="border-x border-b border-gray p-4">
-          <span className="text-[24px]">- {author}</span>
+          <span className="text-[24px] text-gray">- {author}</span>
         </div>
       </div>
     </section>
