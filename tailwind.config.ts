@@ -21,6 +21,12 @@ const config: Config = {
     screens: {
       laptop: "1024px"
     },
+    extend: {
+      boxShadow: {
+        "main-button-start": "inset 0 0 20px rgba(199, 120, 221, 0)",
+        "main-button-end": "inset 0 0 20px rgba(199, 120, 221, 0.5), 0 0 20px rgba(199, 120, 221, 0.2)",
+      },
+    }
   },
   plugins: [],
 }
