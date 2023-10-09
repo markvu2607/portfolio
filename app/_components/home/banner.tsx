@@ -16,9 +16,7 @@ export function Banner() {
               sequence={[
                 "I'm a front-end developer from Vietnam.",
                 1000,
-                "I'm a fullstack developer.",
-                1000,
-                `I love Van <3`,
+                "Nice to meet you.",
                 1000,
               ]}
               speed={50}
