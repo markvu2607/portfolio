@@ -1,10 +1,10 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     colors: {
@@ -16,18 +16,19 @@ const config: Config = {
       tan: "#E5C07A",
       lime: "#98C379",
       coral: "#E06B74",
-      white: "#FFFFFF"
+      white: "#FFFFFF",
     },
     screens: {
-      laptop: "1024px"
+      laptop: "1024px",
     },
     extend: {
       boxShadow: {
         "main-button-start": "inset 0 0 20px rgba(199, 120, 221, 0)",
-        "main-button-end": "inset 0 0 20px rgba(199, 120, 221, 0.5), 0 0 20px rgba(199, 120, 221, 0.2)",
+        "main-button-end":
+          "inset 0 0 20px rgba(199, 120, 221, 0.5), 0 0 20px rgba(199, 120, 221, 0.2)",
       },
-    }
+    },
   },
-  plugins: [],
-}
-export default config
+  plugins: [require("@tailwindcss/aspect-ratio")],
+};
+export default config;
