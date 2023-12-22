@@ -1,6 +1,6 @@
 "use client";
 
-import useSpinnerTitleBarEffect from "@/hooks/useSpinnerTItleBarEffect";
+import { useSpinnerTitleBarEffect } from "@/hooks";
 
 export function SpinnerTitleBarEffect() {
   useSpinnerTitleBarEffect();

@@ -17,7 +17,7 @@ const getLoadingCharacter = (number: number) => {
   }
 };
 
-export default function useSpinnerTitleBarEffect() {
+export function useSpinnerTitleBarEffect() {
   useEffect(() => {
     let counter = 0;
     const intervalId = setInterval(() => {
