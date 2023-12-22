@@ -2,20 +2,17 @@ import Link from "next/link";
 
 import { getFormattedDate } from "@/utils";
 
-type Props = {
+type PostItemProps = {
   post: Meta;
 };
 
-export function ListItem({ post }: Props) {
+export function PostItem({ post }: PostItemProps) {
   const { id, title, date } = post;
   const formattedDate = getFormattedDate(date);
 
   return (
-    <li className="mt-4 text-2xl dark:text-white/90">
-      <Link
-        className="underline hover:text-black/70 dark:hover:text-white"
-        href={`/blog/${id}`}
-      >
+    <li className="text-2xl">
+      <Link className="underline" href={`/blog/${id}`}>
         {title}
       </Link>
       <br />

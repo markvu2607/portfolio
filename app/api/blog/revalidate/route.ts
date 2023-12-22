@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
     });
   }
 
-  const path = request.nextUrl.searchParams.get("path") || "/";
+  const path = request.nextUrl.searchParams.get("path") || "/blog";
 
   revalidatePath(path);
 
