@@ -2,8 +2,8 @@ import "highlight.js/styles/github-dark.css";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import getFormattedDate from "@/lib/getFormattedDate";
 import { getPostByName, getPostsMeta } from "@/lib/posts";
+import { getFormattedDate } from "@/utils";
 
 export const revalidate = 86400;
 
