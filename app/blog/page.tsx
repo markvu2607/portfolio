@@ -1,12 +1,16 @@
-import { Posts } from "./_components/posts";
+import { getPostsMeta } from "@/lib/posts";
+import { PostList } from "./_components/post-list";
+import { cn } from "@/utils";
 
 export const revalidate = 86400;
 
-export default function Blog() {
+export default async function Blog() {
+  const posts = await getPostsMeta();
+
   return (
-    <div className="mx-auto">
-      <p className="mt-12 mb-12 text-3xl text-center">Hello and welcome</p>
-      <Posts />
+    <div className="py-24">
+      <h2 className={cn("mb-8", "text-4xl font-bold")}>Blog</h2>
+      <PostList posts={posts} />
     </div>
   );
 }
