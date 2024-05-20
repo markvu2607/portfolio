@@ -16,7 +16,7 @@ export async function getPostByName(
   fileName: string
 ): Promise<BlogPost | undefined> {
   const res = await fetch(
-    `https://raw.githubusercontent.com/markvu2607/mdx-blogs/main/${fileName}`,
+    `https://raw.githubusercontent.com/markvu2607/mdx-blogs/main/md/content/${fileName}`,
     {
       headers: {
         Accept: "application/vnd.github+json",
@@ -59,7 +59,7 @@ export async function getPostByName(
     },
   });
 
-  const id = fileName.replace(/\.mdx$/, "");
+  const id = fileName.replace(/\.md$/, "");
 
   const blogPostObj: BlogPost = {
     meta: {
@@ -92,7 +92,9 @@ export async function getPostsMeta(): Promise<Meta[] | undefined> {
 
   const filesArray = repoFileTree.tree
     .map((obj) => obj.path)
-    .filter((path) => path.endsWith(".mdx"));
+    .filter((obj) => obj.startsWith("md/content"))
+    .map((obj) => obj.replace("md/content", ""))
+    .filter((path) => path.endsWith(".md"));
 
   const posts: Meta[] = [];
 

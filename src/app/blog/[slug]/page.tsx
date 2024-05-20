@@ -24,7 +24,7 @@ type Props = {
 };
 
 export async function generateMetadata({ params: { slug } }: Props) {
-  const post = await getPostByName(`${slug}.mdx`);
+  const post = await getPostByName(`${slug}.md`);
 
   if (!post) {
     return {
@@ -38,7 +38,7 @@ export async function generateMetadata({ params: { slug } }: Props) {
 }
 
 export default async function Post({ params: { slug } }: Props) {
-  const post = await getPostByName(`${slug}.mdx`);
+  const post = await getPostByName(`${slug}.md`);
 
   if (!post) notFound();
 
