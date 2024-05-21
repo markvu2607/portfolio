@@ -30,6 +30,21 @@ const config: Config = {
         "main-button-end":
           "inset 0 0 20px rgba(199, 120, 221, 0.5), 0 0 20px rgba(199, 120, 221, 0.2)",
       },
+      keyframes: {
+        appear: {
+          from: {
+            opacity: "0",
+            transform: "translateY(2rem)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0%)",
+          },
+        },
+      },
+      animation: {
+        appear: "appear 500ms ease-in-out",
+      },
     },
   },
   plugins: [require("@tailwindcss/aspect-ratio"), addVariablesForColors],
