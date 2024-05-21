@@ -59,7 +59,9 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <span className="text-gray">© Copyright 2023. Made by Mark.</span>
+        <span className="text-gray">
+          © Copyright {new Date(Date.now()).getFullYear()}. Made by Mark.
+        </span>
       </div>
     </footer>
   );
