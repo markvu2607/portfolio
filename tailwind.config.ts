@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+import { addVariablesForColors } from "./src/styles/plugins/add-variables-for-colors";
+
 const config: Config = {
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -30,6 +32,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [require("@tailwindcss/aspect-ratio"), addVariablesForColors],
 };
 export default config;
