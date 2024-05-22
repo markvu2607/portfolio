@@ -27,7 +27,7 @@ export function Banner() {
             He crafts responsive websites where technologies meet creativity.
           </span>
           <button
-            className="px-4 py-2 border border-primary font-medium btn-5 shadow-main-button-start hover:shadow-main-button-end outline-1 outline outline-primary outline-offset-0 hover:outline-offset-[15px]"
+            className="px-4 py-2 border border-primary font-medium shadow-main-button-start hover:shadow-main-button-end outline-1 outline outline-primary outline-offset-0 hover:outline-offset-[15px] hover:outline-none transition-all duration-1000 ease-[cubic-bezier(0.19, 1, 0.22, 1)]"
             onClick={() => router.push("/contact")}
           >
             Contact me!!
