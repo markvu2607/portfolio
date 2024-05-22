@@ -10,7 +10,7 @@ export function AboutMeSection() {
 
   return (
     <SectionWrapper title="about-me" viewMore={{ visible: false }}>
-      <div className="flex items-center">
+      <div className="flex items-center gap-4">
         <div className="flex flex-col gap-7 items-start">
           <span className="text-gray">
             Hello, i’m Mark!
@@ -31,17 +31,13 @@ export function AboutMeSection() {
             Read more -{">"}
           </button>
         </div>
-        <div>
-          <Image
-            src={"/avatar.jpg"}
-            alt="Mark Vu"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="rounded-full"
-            style={{ width: "100%", height: "auto" }}
-          />
-        </div>
+        <Image
+          className="rounded-full"
+          src={"/avatar.jpeg"}
+          alt="Mark Vu"
+          width={400}
+          height={400}
+        />
       </div>
     </SectionWrapper>
   );

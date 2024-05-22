@@ -37,7 +37,7 @@ export function Banner() {
       <div className="flex flex-col items-center gap-1">
         <Image
           className="rounded-full"
-          src="/avatar.jpg"
+          src="/avatar.jpeg"
           alt="Mark Vu"
           width={400}
           height={400}
