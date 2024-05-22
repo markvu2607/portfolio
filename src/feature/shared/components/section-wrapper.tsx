@@ -3,7 +3,6 @@ import { PropsWithChildren } from "react";
 
 type TSectionWrapperProps = PropsWithChildren & {
   title: string;
-  // TODO: Refactor viewMore prop
   viewMore: { visible: boolean; link?: string };
   showTitleLine?: boolean;
 };
@@ -27,7 +26,7 @@ export function SectionWrapper({
           )}
         </div>
         {viewMore.visible && (
-          <Link href={viewMore.link || "/"}>
+          <Link href={viewMore.link!}>
             <span className="font-medium hover:text-primary hover:underline duration-200">
               View more ~~{">"}
             </span>

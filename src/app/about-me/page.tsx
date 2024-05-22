@@ -26,7 +26,7 @@ export default function AboutMe() {
         </span>
         <Image
           className="rounded-full"
-          src="/avatar.jpg"
+          src="/avatar.jpeg"
           alt="Mark Vu"
           width={300}
           height={300}
