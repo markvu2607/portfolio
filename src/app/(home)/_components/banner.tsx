@@ -14,7 +14,7 @@ export function Banner() {
           <span className="text-[32px] font-semibold">
             <TypeAnimation
               sequence={[
-                "I'm a front-end developer from Vietnam.",
+                "I'm a full-stack developer from Vietnam.",
                 1000,
                 "Nice to meet you.",
                 1000,
@@ -24,7 +24,7 @@ export function Banner() {
             />
           </span>
           <span className="text-gray">
-            He crafts responsive websites where technologies meet creativity.
+            I craft responsive websites where technologies meet creativity.
           </span>
           <button
             className="px-4 py-2 border border-primary font-medium shadow-main-button-start hover:shadow-main-button-end outline-1 outline outline-primary outline-offset-0 hover:outline-offset-[15px] hover:outline-none transition-all duration-1000 ease-[cubic-bezier(0.19, 1, 0.22, 1)]"
