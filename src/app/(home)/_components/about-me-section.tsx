@@ -13,11 +13,11 @@ export function AboutMeSection() {
       <div className="flex items-center gap-4">
         <div className="flex flex-col gap-7 items-start">
           <span className="text-gray">
-            Hello, i’m Mark!
+            Hello, I’m Mark!
             <br />
-            <br /> I’m a self-taught front-end developer based in Hanoi,
-            Vietnam. I can develop responsive websites from scratch and raise
-            them into modern user-friendly web experiences.
+            <br /> I’m a full-stack developer based in Hanoi, Vietnam. I can
+            develop responsive websites from scratch and raise them into modern
+            user-friendly web experiences.
             <br />
             <br /> Transforming my creativity and knowledge into a websites has
             been my passion for over a year. I have been helping various clients

@@ -3,44 +3,19 @@ import { TProject } from "./types";
 export const projects: TProject[] = [
   {
     name: "Portfolio",
-    description: "Mark Vu portfolio",
+    description: "Mark's Portfolio",
     thumbnail: "/avatar.jpeg",
     technologies: ["NextJs", "Framer-Motion", "TailwindCSS"],
-    liveLink: "https://portfolio-markvu2607.vercel.app/",
-  },
-  {
-    name: "Portfolio",
-    description: "Mark Vu portfolio",
-    thumbnail: "/avatar.jpeg",
-    technologies: ["NextJs", "Framer-Motion", "TailwindCSS"],
-    liveLink: "https://portfolio-markvu2607.vercel.app/",
-  },
-  {
-    name: "Portfolio",
-    description: "Mark Vu portfolio.",
-    thumbnail: "/avatar.jpeg",
-    technologies: ["NextJs", "Framer-Motion", "TailwindCSS"],
-    liveLink: "https://portfolio-markvu2607.vercel.app/",
+    liveLink: "https://markvu.tech/",
   },
 ];
 
 export const smallProjects: TProject[] = [
   {
-    name: "Portfolio",
-    description: "Mark Vu portfolio",
-    technologies: ["NextJs", "Framer-Motion", "TailwindCSS"],
-    liveLink: "https://portfolio-markvu2607.vercel.app/",
-  },
-  {
-    name: "Portfolio",
-    description: "Mark Vu portfolio",
-    technologies: ["NextJs", "Framer-Motion", "TailwindCSS"],
-    liveLink: "https://portfolio-markvu2607.vercel.app/",
-  },
-  {
-    name: "Portfolio",
-    description: "Mark Vu portfolio.",
-    technologies: ["NextJs", "Framer-Motion", "TailwindCSS"],
-    liveLink: "https://portfolio-markvu2607.vercel.app/",
+    name: "Levocab",
+    description: "CLI for learn English vocabulary.",
+    thumbnail: "/levocab-thumbnail.png",
+    technologies: ["NodeJS", "Chalk", "Inquirer"],
+    liveLink: "https://www.npmjs.com/package/levocab",
   },
 ];

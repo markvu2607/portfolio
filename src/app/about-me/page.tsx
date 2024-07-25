@@ -11,12 +11,12 @@ export default function AboutMe() {
 
       <div className="flex items-center gap-4">
         <span className="flex-1 text-gray">
-          Hello, i’m Mark!
+          Hello, I’m Mark!
           <br />
           <br />
-          I’m a self-taught front-end developer from Vietnam. I can develop
-          responsive websites from scratch and raise them into modern
-          user-friendly web experiences.
+          I’m a full-stack developer from Vietnam. I can develop responsive
+          websites from scratch and raise them into modern user-friendly web
+          experiences.
           <br />
           <br />
           Transforming my creativity and knowledge into a websites has been my
@@ -42,25 +42,12 @@ export default function AboutMe() {
       >
         <div className="flex flex-wrap gap-2">
           <span className="p-2 border border-gray text-gray">
-            I like winter more than summer
+            I like <span className="text-white">winter</span> more than{" "}
+            <span className="text-white">summer</span>
           </span>
-
           <span className="p-2 border border-gray text-gray">
-            I like <span className="text-white">pizza</span> and{" "}
-            <span className="text-white">pasta</span>
-          </span>
-
-          <span className="p-2 border border-gray text-gray">
-            I like winter more than summerrrrrrrrrrrr
-          </span>
-
-          <span className="p-2 border border-gray text-gray">
-            I like winter more than summerrrr
-          </span>
-
-          <span className="p-2 border border-gray text-gray">
-            I like <span className="text-white">pizza</span> and{" "}
-            <span className="text-white">pasta</span>
+            I like <span className="text-white">MacOS</span> more than{" "}
+            <span className="text-white">Windows</span>
           </span>
         </div>
       </SectionWrapper>

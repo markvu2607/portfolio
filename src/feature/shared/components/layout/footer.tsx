@@ -19,7 +19,7 @@ export function Footer() {
                 </Link>
               </div>
             </div>
-            <span>Front-end developer from Vietnam.</span>
+            <span>Full-stack developer from Vietnam.</span>
           </div>
           <div>
             <span className="font-medium text-[24px]">Media</span>

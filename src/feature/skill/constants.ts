@@ -3,21 +3,28 @@ import { TSkill } from "./types";
 export const skills: TSkill[] = [
   {
     skillType: "Languages",
-    skills: ["Typescript", "Lua", "Python", "Javascript"],
+    skills: ["Typescript", "Javascript", "HTML/CSS", "Python"],
   },
 
   {
-    skillType: "Languages",
-    skills: ["Typescript", "Lua", "Python", "Javascript"],
+    skillType: "Frontend",
+    skills: ["ReactJS", "NextJS", "Redux", "TailwindCSS"],
   },
 
   {
-    skillType: "Languages",
-    skills: ["Typescript", "Lua", "Python", "Javascript"],
+    skillType: "Backend",
+    skills: ["NodeJS", "ExpressJS"],
   },
-
   {
-    skillType: "Languages",
-    skills: ["Typescript", "Lua", "Python", "Javascript"],
+    skillType: "Database",
+    skills: ["MongoDB", "PostgresSQL"],
+  },
+  {
+    skillType: "Cloud Servers",
+    skills: ["AWS", "Supabase", "Firebase"],
+  },
+  {
+    skillType: "Tools",
+    skills: ["Git", "Github", "Docker", "VSCode", "Figma", "Postman"],
   },
 ];
