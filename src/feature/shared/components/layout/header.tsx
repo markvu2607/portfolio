@@ -30,7 +30,9 @@ export function Header() {
                 }`}
               >
                 <span className="text-primary">#</span>
-                <Link href={route.link}>{route.name}</Link>
+                <Link href={route.link} target={route.target}>
+                  {route.name}
+                </Link>
               </li>
             ))}
           </ul>
